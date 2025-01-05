@@ -9,7 +9,7 @@ import { Link } from '@inertiajs/vue3';
     >
         <div>
             <Link href="/">
-                <h1 class="fill-current text-gray-500 text-2xl">{{ 'Blog application' }}</h1>
+                <h1 class="fill-current text-gray-500 text-2xl">{{ 'Product store application' }}</h1>
             </Link>
         </div>
 

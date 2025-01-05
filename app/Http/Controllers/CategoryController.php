@@ -74,9 +74,9 @@ class CategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Category $post): Application|Redirector|RedirectResponse
+    public function destroy(Category $category): Application|Redirector|RedirectResponse
     {
-        $post->delete();
+        $category->delete();
         return redirect(route('categories.index'));
     }
 }

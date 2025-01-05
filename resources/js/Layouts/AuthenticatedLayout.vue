@@ -40,10 +40,10 @@ const showingNavigationDropdown = ref(false);
                                     Dashboard
                                 </NavLink>
                                 <NavLink
-                                    :href="route('posts.index')"
-                                    :active="route().current('posts.index')"
+                                    :href="route('categories.index')"
+                                    :active="route().current('categories.index')"
                                 >
-                                    Posts
+                                    Categories
                                 </NavLink>
                             </div>
                         </div>

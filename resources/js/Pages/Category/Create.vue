@@ -65,7 +65,7 @@ const submit = () => {
 
                             <div class="flex items-center gap-4 justify-end">
                                 <PrimaryButton>
-                                    <span class="pl-2">save Post</span>
+                                    <span class="pl-2">save Category</span>
                                 </PrimaryButton>
 
                                 <Transition

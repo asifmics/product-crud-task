@@ -37,7 +37,7 @@ const closeModal = () => {
     shouldDelete.value = false;
 };
 
-const deletePost = () => {
+const deleteCategory = () => {
     form.delete(route('categories.destroy', categoryID.value), {
         preserveScroll: true,
         onSuccess: () => {
@@ -110,8 +110,7 @@ const filterHandle = () => {
                             <thead class="text-color">
                             <tr>
                                 <th class="py-3 rounded-tl-2xl font-barlow w-20">#</th>
-                                <th class="py-3 text-16 font-barlow font-semibold text-left">Title</th>
-                                <th class="py-3 text-16 font-barlow font-semibold text-center">Description</th>
+                                <th class="py-3 text-16 font-barlow font-semibold text-left">Name</th>
                                 <th class="py-3 text-16 font-barlow font-semibold">Status</th>
                                 <th class="py-3 text-16 font-barlow font-semibold">Action</th>
                             </tr>
@@ -178,9 +177,9 @@ const filterHandle = () => {
 
                     <DangerButton
                         class="ms-3"
-                        @click="deletePost"
+                        @click="deleteCategory"
                     >
-                        Delete Post
+                        Delete Category
                     </DangerButton>
                 </div>
             </div>
